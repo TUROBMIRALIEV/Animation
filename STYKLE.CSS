@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.block{
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50% ,-50%);
+   
+}
+body{
+    background-color: black;
+}
+.box{
+    width: 20px;
+    height: 150px;
+    background-color: white;
+    display: inline-block;
+    transform-origin:bottom center ;
+    animation:  loader   1s 0s infinite alternate   ;
+}
+@keyframes loader {
+    0%{
+        transform: scaleY(0.1);
+        background-color: white
+    }
+    50%{
+        transform: scaleY(1);
+        background-color: #2ecc71;
+    }
+    100%{
+        transform: scaleY(0.1);
+        background-color: white  
+    }
+}
+.box1{
+    animation-delay: .1s;
+}
+.box2{
+    animation-delay: .3s;
+}
+.box3{
+    animation-delay: .2s;
+}
+.box4{
+    animation-delay: .8s;
+}
+.box5{
+    animation-delay: .3s;
+}
+.box6{
+    animation-delay: .4s;
+}
+.box7{
+    animation-delay: .7s;
+}
+.box8{
+    animation-delay: .6s;
+}
